@@ -19,9 +19,10 @@ import co.edu.LaGenerica.Clientes.Model.Clientes;
 import co.edu.LaGenerica.Clientes.Repository.ClientesRepository;
 
 
-@CrossOrigin(origins = "http://localhost:3000")
+
 @RestController
 @RequestMapping("/clientes")
+@CrossOrigin(origins = "http://localhost:3000")		
 public class ClientesAPI {
 	@Autowired
 	private ClientesRepository clientesRepository;
